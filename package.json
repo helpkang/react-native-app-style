@@ -1,6 +1,6 @@
 {
   "name": "react-native-app-style",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "style simple apply to react native app",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,7 @@
   "author": "ksi",
   "license": "MIT",
   "peerDependencies": {
-    "react-native": ">=0.40.0"
+    "react-native": ">=0.40.0",
+    "react-native-vector-icons": ">=4.0.0",
   }
 }
