@@ -2,6 +2,7 @@
 
 react native style을 중앙에서 관리 함.
 react native 기본 UI를 style을 적용하기 위해 wrapper class 형태로 
+
 ```
 
 import {View} from "react-native"
@@ -11,6 +12,7 @@ import {View} from "react-native"
 
 ```
 
+```
 // style file
 const style ={
   
@@ -37,7 +39,7 @@ import styledComponent, { AppStyle } from "react-native-app-style/style"
 </Styled.View>
 </AppStyle>
 
-
+```
 
 
 
