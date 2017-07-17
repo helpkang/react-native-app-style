@@ -1,7 +1,5 @@
-import styledComponent from "react-native-app-style/style"
+import styledComponent from "./styledComponent"
 
 import Ionicons from 'react-native-vector-icons/Ionicons'
 
-moduele.export ={
-    Ionicon: styledComponent('icon')(Ionicons)
-}
+export const Ionicon = styledComponent('icon')(Ionicons)

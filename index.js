@@ -6,9 +6,9 @@ import {
     Image,
     KeyboardAvoidingView,
     ListView,
-    MapView,
+    // MapView,
     Modal,
-    Navigator,
+    // Navigator,
     NavigatorIOS,
     Picker,
     PickerIOS,
@@ -34,40 +34,51 @@ import {
     WebView,
 } from "react-native"
 
+import React from "react-native"
+
+
 import styledComponent from "./styledComponent"
 
-module.exports = {
-    ActivityIndicator: styledComponent()(ActivityIndicator),
-    Button: styledComponent()(Button),
-    DatePickerIOS: styledComponent()(DatePickerIOS),
-    DrawerLayoutAndroid: styledComponent()(DrawerLayoutAndroid),
-    Image: styledComponent()(Image),
-    KeyboardAvoidingView: styledComponent()(KeyboardAvoidingView),
-    ListView: styledComponent()(ListView),
-    MapView: styledComponent()(MapView),
-    Modal: styledComponent()(Modal),
-    Navigator: styledComponent()(Navigator),
-    NavigatorIOS: styledComponent()(NavigatorIOS),
-    Picker: styledComponent()(Picker),
-    PickerIOS: styledComponent()(PickerIOS),
-    ProgressBarAndroid: styledComponent()(ProgressBarAndroid),
-    ProgressViewIOS: styledComponent()(ProgressViewIOS),
-    RefreshControl: styledComponent()(RefreshControl),
-    ScrollView: styledComponent()(ScrollView),
-    SegmentedControlIOS: styledComponent()(SegmentedControlIOS),
-    Slider: styledComponent()(Slider),
-    SnapshotViewIOS: styledComponent()(SnapshotViewIOS),
-    // StatusBar: styledComponent()(StatusBar),
-    Switch: styledComponent()(Switch),
-    TabBarIOS: styledComponent()(TabBarIOS),
-    Text: styledComponent()(Text),
-    TextInput: styledComponent()(TextInput),
-    ToolbarAndroid: styledComponent()(ToolbarAndroid),
-    TouchableHighlight: styledComponent()(TouchableHighlight),
-    TouchableNativeFeedback: styledComponent()(TouchableNativeFeedback),
-    TouchableOpacity: styledComponent()(TouchableOpacity),
-    TouchableWithoutFeedback: styledComponent()(TouchableWithoutFeedback),
-    View: styledComponent()(View),
-    ViewPagerAndroid: styledComponent()(ViewPagerAndroid),
-    WebView: styledComponent()(WebView),
+const objs = {
+    ActivityIndicator,
+    Button,
+    DatePickerIOS,
+    DrawerLayoutAndroid,
+    Image,
+    KeyboardAvoidingView,
+    ListView,
+    // MapView,
+    Modal,
+    // Navigator,
+    NavigatorIOS,
+    Picker,
+    PickerIOS,
+    ProgressBarAndroid,
+    ProgressViewIOS,
+    RefreshControl,
+    ScrollView,
+    SegmentedControlIOS,
+    Slider,
+    SnapshotViewIOS,
+    // StatusBar,
+    Switch,
+    TabBarIOS,
+    Text,
+    TextInput,
+    ToolbarAndroid,
+    TouchableHighlight,
+    TouchableNativeFeedback,
+    TouchableOpacity,
+    TouchableWithoutFeedback,
+    View,
+    ViewPagerAndroid,
+    WebView,
 }
+
+let json = {}
+Object.keys(objs).forEach(function (key) {
+  let obj = objs[key];
+  json[key] = styledComponent()(obj)
+})
+
+module.exports = json

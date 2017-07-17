@@ -8,8 +8,6 @@ import StyleContext from "./StyleContext"
 
 export default class AppStyle extends Component {
 
-
-
     static propType = {
         styleInfo: PropTypes.object,
         children: PropTypes.element.isRequired,
