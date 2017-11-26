@@ -1,8 +1,9 @@
 import React, {
     Component,
-    PropTypes,
     Children,
 } from 'react';
+
+import PropTypes from 'prop-types'
 
 import StyleContext from "./StyleContext"
 

@@ -4,9 +4,11 @@
  * @flow
  */
 
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react'
 
-import hoistStatics from 'hoist-non-react-statics';
+import PropTypes from 'prop-types'
+
+import hoistStatics from 'hoist-non-react-statics'
 
 export default function styledComponent(tagName) {
   return (OriginComp) => {
